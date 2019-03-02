@@ -1,12 +1,13 @@
 import React from 'react'
 import './App.css'
+import Nav from './Nav'
+import Main from './Main'
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello, Swiss Army App!</h1>
-      </header>
+    <div id="App">
+      <Nav />
+      <Main />
     </div>
   )
 }

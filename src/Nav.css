@@ -5,15 +5,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-html {
-  height: 100%;
-}
-body {
-  height: 100%;
-  background: #444;
-  color: #fffce1;
-  font-family: 'Raleway', Arial, sans-serif;
-}
+
 #app {
   height: 100%;
 }
@@ -23,50 +15,9 @@ a {
 }
 a:hover,
 a:focus {
-  color: #c94e50;
+  color: red;
 }
-main {
-  height: 100%;
-  padding: 3em 2em;
-  text-align: center;
-  background: #b4bad2;
-  overflow: auto;
-}
-h1 {
-  font-weight: 800;
-  font-size: 3.75em;
-}
-.description {
-  max-width: 20em;
-  margin: 1.2em auto 1em;
-  line-height: 1.3em;
-  font-weight: 400;
-}
-.demo-buttons {
-  font-size: 1em;
-  max-width: 1200px;
-  margin: 2em auto 3em;
-  padding: 0 10em;
-}
-.demo-buttons a {
-  display: inline-block;
-  margin: 0.75em;
-  padding: 1.35em 1.1em;
-  width: 15em;
-  background: #fffce1;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 800;
-  border-top-left-radius: 20px 50px;
-  border-top-right-radius: 20px 50px;
-  border-bottom-right-radius: 20px 50px;
-  border-bottom-left-radius: 20px 50px;
-  cursor: pointer;
-}
-.demo-buttons a.current-demo {
-  background: #c94e50;
-  color: #fffce1;
-}
+
 .side-button {
   display: inline-block;
   width: 5em;
@@ -129,7 +80,7 @@ h1 {
 }
 .bm-menu a:hover,
 .bm-menu a:focus {
-  color: #c94e50;
+  color: red;
 }
 .bm-item-list a {
   padding: 0.8em;

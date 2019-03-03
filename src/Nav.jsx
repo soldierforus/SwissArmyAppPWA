@@ -1,5 +1,8 @@
 import React from 'react'
 import { slide as Menu } from 'react-burger-menu'
+import { Router, Link } from '@reach/router'
+import DadJoke from './DadJoke'
+import Home from './Home'
 import './Nav.css'
 
 class Nav extends React.Component {
@@ -9,26 +12,20 @@ class Nav extends React.Component {
 
   render() {
     return (
-      <Menu>
-        <a id="home" className="menu-item" href="/">
-          Home
-        </a>
-        <a id="about" className="menu-item" href="/about">
-          About
-        </a>
-        <a id="contact" className="menu-item" href="/contact">
-          Contact
-        </a>
-        <a id="home" className="menu-item" href="/">
-          Dad Joke
-        </a>
-        <a id="about" className="menu-item" href="/about">
-          Weather
-        </a>
-        <a id="contact" className="menu-item" href="/contact">
-          Workout Tracker
-        </a>
-      </Menu>
+      <div>
+        <Menu>
+          <Link to="/">Home</Link>
+          <Link to="/DadJoke">Dad Joke</Link>
+          <Link to="/weather">Weather</Link>
+          <Link to="/workoutTracker">Workout Tracker</Link>
+        </Menu>
+        <Router>
+          <Home path="/" />
+          <DadJoke path="DadJoke" />
+          <DadJoke path="Weather" />
+          <DadJoke path="WorkoutTracker" />
+        </Router>
+      </div>
     )
   }
 }

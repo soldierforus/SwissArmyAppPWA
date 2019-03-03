@@ -1,7 +1,7 @@
 import React from 'react'
-import './Main.css'
+import './Home.css'
 
-const Main = () => {
+const Home = () => {
   return (
     <div id="Main">
       <h1>Swiss Army App</h1>
@@ -9,4 +9,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Home

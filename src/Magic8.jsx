@@ -27,11 +27,11 @@ class Magic8 extends Component {
     return (
       <div id="Magic8">
         <h1>Magic 8 Ball</h1>
-        {/* eslint-disable-next-line react/destructuring-assignment */}
-        <p>{this.state.response}</p>
         <button type="button" onClick={this.ask}>
           Ask Magic 8 ball
         </button>
+        {/* eslint-disable-next-line react/destructuring-assignment */}
+        <p>{this.state.response}</p>
       </div>
     )
   }

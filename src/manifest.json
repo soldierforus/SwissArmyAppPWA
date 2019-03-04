@@ -1,0 +1,30 @@
+{
+  "name": "Swiss Army App",
+  "short_name": "SAA",
+  "icons": [
+    {
+      "src": "img/icon128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icon152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icon144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html?homescreen=1",
+  "display": "standalone",
+  "background_color": "#ffff",
+  "theme_color": "#f80012"
+}

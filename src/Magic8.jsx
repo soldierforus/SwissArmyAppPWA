@@ -10,7 +10,7 @@ class Magic8 extends Component {
     const responses = [
       'How the hell should I know?',
       'Ask again later, a lot later',
-      'You have a better chance of winning the Lottery...On your wedding day... in space',
+      'You have a better chance of winning the Lottery...On your wedding day... from space',
       'Pigs have been known to fly...Oh...Wait.',
       'It seems plausible in the distant, distant future; Think millenia',
       'No, just no',

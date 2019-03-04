@@ -3,6 +3,7 @@ import { Router, Link } from '@reach/router'
 import React from 'react'
 import DadJoke from './DadJoke'
 import Magic8 from './Magic8'
+import Goals from './Goals'
 import Home from './Home'
 import Weather from './Weather'
 import Workout from './Workout'
@@ -22,6 +23,7 @@ class Nav extends React.Component {
           <Link to="/weather">Weather</Link>
           <Link to="/DadJoke">Dad Joke</Link>
           <Link to="/magic8">Magic 8 Ball</Link>
+          <Link to="/goals">Goals</Link>
           <Link to="/workout">Workout Tracker</Link>
           <img src="img/knife.gif" alt="Knife gif by Seth Eckert" className="sidebarImg" />
         </Menu>
@@ -30,6 +32,7 @@ class Nav extends React.Component {
           <Weather path="weather" />
           <DadJoke path="dadJoke" />
           <Magic8 path="magic8" />
+          <Goals path="goals" />
           <Workout path="workout" />
         </Router>
       </div>

@@ -21,7 +21,7 @@ class Nav extends React.Component {
         <Menu>
           <Link to="/">Home</Link>
           <Link to="/weather">Weather</Link>
-          <Link to="/DadJoke">Dad Joke</Link>
+          <Link to="/dadJoke">Dad Joke</Link>
           <Link to="/magic8">Magic 8 Ball</Link>
           <Link to="/goals">Goals</Link>
           <Link to="/workout">Workout Tracker</Link>

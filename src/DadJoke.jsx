@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import axios from 'axios'
+import fetch from 'node-fetch'
 import './DadJoke.css'
 
 class DadJoke extends Component {
@@ -9,10 +9,16 @@ class DadJoke extends Component {
 
   // Code is invoked after the component is mounted/inserted into the DOM tree. Setting the value of result.data to the property data on that object litral being passed as the first property to setState
   componentDidMount() {
+    // https://icanhazdadjoke.com/api
     const url = 'https://icanhazdadjoke.com/'
 
-    axios
-      .get(url)
+    // https://github.com/bitinn/node-fetch#fetchurl-options
+    fetch(url, {
+      headers: {
+        Accept: 'application/json',
+        'User-Agent': 'saa-dadjokes',
+      },
+    })
       .then(result => result.json())
       .then(result => {
         this.setState({

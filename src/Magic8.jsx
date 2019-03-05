@@ -27,6 +27,7 @@ class Magic8 extends Component {
   }
 
   render() {
+    // use line below to avoid destructuring lint error
     const { response } = this.state
 
     return (

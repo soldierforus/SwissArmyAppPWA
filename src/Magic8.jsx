@@ -18,20 +18,24 @@ class Magic8 extends Component {
       'That seems highly unlikely, then again, so did a Trump presidency',
       'Go ask the internet',
       'Obsessed much?',
+      'Indubitably',
+      'If you will it, it is no dream',
+      "Ask me no questions, and I'll tell you no lies",
     ]
     const randomResponse = responses[Math.floor(Math.random() * responses.length)]
     this.setState({ response: randomResponse })
   }
 
   render() {
+    const { response } = this.state
+
     return (
       <div id="Magic8">
         <h1>Magic 8 Ball</h1>
         <button type="button" onClick={this.ask}>
           Ask Magic 8 ball
         </button>
-        {/* eslint-disable-next-line react/destructuring-assignment */}
-        <p>{this.state.response}</p>
+        <p>{response}</p>
       </div>
     )
   }

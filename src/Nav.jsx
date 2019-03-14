@@ -33,7 +33,6 @@ class Nav extends React.Component {
     const { menuOpen } = this.state
     return (
       <div>
-        {/* // eslint-disable-next-line react/destructuring-assignment */}
         <Menu isOpen={menuOpen}>
           <Link to="/" onClick={() => this.closeMenu()}>
             Home

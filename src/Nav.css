@@ -85,17 +85,17 @@ body {
 
 .sidebarImg {
   height: 300px;
-  width: 200px;
+  width: 175px;
   transform: rotate(90deg);
   margin-top: 44%;
   margin-left: 20%;
 }
 
-@media all and (min-width: 1200px) {
+/* @media all and (min-width: 1200px) {
 }
 @media all and (min-width: 960px) and (max-width: 1199px) {
 }
 @media all and (min-width: 768px) and (max-width: 959px) {
 }
 @media all and (min-width: 480px) and (max-width: 767px) {
-}
+} */

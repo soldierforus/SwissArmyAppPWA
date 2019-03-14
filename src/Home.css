@@ -3,3 +3,11 @@
   height: 500px;
   width: 500px;
 }
+
+@media all and (max-width: 767px) {
+  .homeLogo {
+    position: center;
+    height: 250px;
+    width: 250px;
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "Swiss Army App",
-  "short_name": "SAA",
+  "short_name": "Swiss Army App",
   "icons": [
     {
       "src": "img/icon128.png",
@@ -23,7 +23,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/index.html?homescreen=1",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffff",
   "theme_color": "#f80012"

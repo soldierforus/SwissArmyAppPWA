@@ -12,20 +12,47 @@ import sidebarImg from './img/knife.gif'
 import './Nav.css'
 
 class Nav extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      menuOpen: false,
+    }
+  }
+
   showSettings = event => {
     event.preventDefault()
   }
 
+  closeMenu() {
+    this.setState({
+      menuOpen: false,
+    })
+  }
+
   render() {
+    const { menuOpen } = this.state
     return (
       <div>
-        <Menu>
-          <Link to="/">Home</Link>
-          <Link to="/weather">Weather</Link>
-          <Link to="/dadJoke">Dad Joke</Link>
-          <Link to="/magic8">Magic 8 Ball</Link>
-          <Link to="/goals">Goals</Link>
-          <Link to="/workout">Workout Tracker</Link>
+        {/* // eslint-disable-next-line react/destructuring-assignment */}
+        <Menu isOpen={menuOpen}>
+          <Link to="/" onClick={() => this.closeMenu()}>
+            Home
+          </Link>
+          <Link to="/weather" onClick={() => this.closeMenu()}>
+            Weather
+          </Link>
+          <Link to="/dadJoke" onClick={() => this.closeMenu()}>
+            Dad Joke
+          </Link>
+          <Link to="/magic8" onClick={() => this.closeMenu()}>
+            Magic 8 Ball
+          </Link>
+          <Link to="/goals" onClick={() => this.closeMenu()}>
+            Goals
+          </Link>
+          <Link to="/workout" onClick={() => this.closeMenu()}>
+            Workout Tracker
+          </Link>
           <img src={sidebarImg} alt="Knife gif by Seth Eckert" className="sidebarImg" />
         </Menu>
         <Router>

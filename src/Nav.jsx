@@ -7,6 +7,7 @@ import Goals from './Goals'
 import Home from './Home'
 import Weather from './Weather'
 import Workout from './Workout'
+import sidebarImg from './img/knife.gif'
 
 import './Nav.css'
 
@@ -25,7 +26,7 @@ class Nav extends React.Component {
           <Link to="/magic8">Magic 8 Ball</Link>
           <Link to="/goals">Goals</Link>
           <Link to="/workout">Workout Tracker</Link>
-          <img src="img/knife.gif" alt="Knife gif by Seth Eckert" className="sidebarImg" />
+          <img src={sidebarImg} alt="Knife gif by Seth Eckert" className="sidebarImg" />
         </Menu>
         <Router>
           <Home path="/" />

@@ -47,7 +47,7 @@ body {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: #3d4045;
 }
 
 /* Position and sizing of clickable cross button */
@@ -63,14 +63,14 @@ body {
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: #3d4045;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #373a47;
+  fill: #3d4045;
 }
 
 /* Wrapper for item list */
@@ -80,7 +80,15 @@ body {
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: #3d4045;
+}
+
+.sidebarImg {
+  height: 300px;
+  width: 200px;
+  transform: rotate(90deg);
+  margin-top: 44%;
+  margin-left: 20%;
 }
 
 @media all and (min-width: 1200px) {

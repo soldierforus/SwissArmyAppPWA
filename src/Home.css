@@ -1,4 +1,4 @@
-#Home {
-  background-position: center;
-  background-image: url(./img/logo.png);
+.homeLogo {
+  position: center;
+  size: 50%;
 }

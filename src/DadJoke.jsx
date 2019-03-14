@@ -27,13 +27,35 @@ class DadJoke extends Component {
       })
   }
 
+  getJoke = () => {
+    // https://icanhazdadjoke.com/api
+    const url = 'https://icanhazdadjoke.com/'
+
+    // https://github.com/bitinn/node-fetch#fetchurl-options
+    fetch(url, {
+      headers: {
+        Accept: 'application/json',
+        'User-Agent': 'saa-dadjokes',
+      },
+    })
+      .then(result => result.json())
+      .then(result => {
+        this.setState({
+          data: result.joke,
+        })
+      })
+  }
+
   render() {
     const { data } = this.state
 
     return (
       <div id="DadJoke">
         <h1>Dad Joke</h1>
-        <p>Joke: {data}</p>
+        <p>{data}</p>
+        <button type="button" onClick={this.getJoke}>
+          Get new joke
+        </button>
       </div>
     )
   }

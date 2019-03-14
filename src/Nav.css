@@ -85,10 +85,20 @@ body {
 
 .sidebarImg {
   height: 300px;
-  width: 175px;
+  width: 200px;
   transform: rotate(90deg);
   margin-top: 44%;
   margin-left: 20%;
+}
+
+@media all and (max-width: 767px) {
+  .sidebarImg {
+    height: 300px;
+    width: 200px;
+    transform: rotate(90deg);
+    margin-top: 20px;
+    margin-left: 50px;
+  }
 }
 
 /* @media all and (min-width: 1200px) {

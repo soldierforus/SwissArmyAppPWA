@@ -7,6 +7,9 @@ const Home = () => {
     <div id="Home">
       <h1>Swiss Army App</h1>
       <img alt="logo" src={logo} className="homeLogo" />
+      <p>
+        By <a href="https://tdbennett.com">Travis Bennett</a>
+      </p>
     </div>
   )
 }
